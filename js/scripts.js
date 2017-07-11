@@ -1,15 +1,9 @@
-// for (var index=0; index <= 30; index += 5) {
-//   alert(index);
-// }
-//
-// for (var index=0; index <= 50; index += 7) {
-//   alert(index);
-// }
-
+//UI logic
 $(document).ready(function() {
   $("form#loopNumbers").submit(function(event) {
     var conditionInput = parseInt($("input#numCondition").val());
     var incrementInput = parseInt($("input#numIncrement").val());
+    var result = '';
     if (isNaN(conditionInput)) {
       alert("Please enter a number to stop at.")
     } else if (isNaN(incrementInput)) {
@@ -21,7 +15,9 @@ $(document).ready(function() {
     } else if (incrementInput > conditionInput) {
       alert("Please make sure your increment number is smaller than the number to stop at.")
     } else {
+      //Business Logic Begins
       for (var index = incrementInput; index <= conditionInput; index += incrementInput) {
+      //End Business Logic
       alert(index);
       }
     }
