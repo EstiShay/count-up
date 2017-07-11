@@ -8,16 +8,19 @@
     <title>Count Up For Loops</title>
   </head>
   <body>
-    <h1>Looping numbers</h1>
     <div class="container">
+      <h1>Looping numbers</h1>
       <form id="loopNumbers">
         <div class="form-group">
-          <label for="nums">Enter a number:</label>
-          <input id="nums" class="form-control" type="text">
+          <label for="numCondition">Enter a number to stop at:</label>
+          <input required id="numCondition" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="numIncrement">Enter a number to increase by:</label>
+          <input required id="numIncrement" class="form-control" type="text">
         </div>
         <button class="btn btn-primary" type="submit">Loop!</button>
       </form>
-
     </div>
   </body>
 </html>
